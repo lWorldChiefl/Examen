@@ -11,16 +11,16 @@ using System.Linq.Expressions;
 using System.Web;
 using System.Data;
 /* -------------- */
-using caRepositoryPattern.AccessDAL;
+using ApiProgramacionWeb.DAL;
 using System.Data.Entity;
 
 namespace ApiProgramacionWeb.BL.Repository
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        protected readonly wcfDataBaseEntities Context;
+        protected readonly TiendaEntities Context;
 
-        public Repository(wcfDataBaseEntities context)
+        public Repository(TiendaEntities context)
         {
             Context = context;
         }

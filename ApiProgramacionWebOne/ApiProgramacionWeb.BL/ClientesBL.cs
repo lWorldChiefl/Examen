@@ -7,12 +7,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-using ApiProgramacionWeb.BL.Repository;
+using ApiProgramacionWeb;
+using ApiProgramacionWeb.DAL;
 
 namespace ApiProgramacionWeb.BL
 {
-    class ClientesBL : Repository<Clientes>
+    class ClientesBL : Repository<Cliente>
     {
         public ClientesBL(wcfDataBaseEntities context) : base(context)
         {
