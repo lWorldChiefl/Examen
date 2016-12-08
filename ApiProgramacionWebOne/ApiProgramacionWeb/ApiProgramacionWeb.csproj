@@ -140,6 +140,16 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApiProgramacionWeb.BL\ApiProgramacionWeb.BL.csproj">
+      <Project>{b2c46ddd-3d6b-42d7-b773-b3f0315f7a03}</Project>
+      <Name>ApiProgramacionWeb.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ApiProgramacionWeb.DAL\ApiProgramacionWeb.DAL.csproj">
+      <Project>{7ae4fa66-839e-4f6f-97ad-d3787b0c5d30}</Project>
+      <Name>ApiProgramacionWeb.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
