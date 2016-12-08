@@ -25,19 +25,25 @@ namespace ApiProgramacionWeb.BL
 
         private DataTable dt = null;
         private SqlCommand cmd = null;
+        private SqlConnection con = null;
+        private SqlDataReader dr = null;
 
         public List<Pago> GetListaDePagos()
         {
+            /*          Instancias de objeto             */
+            con = new SqlConnection(ConexionSqlServer.ConexionSql());
             dt = new DataTable();
-            cmd = new SqlCommand();
+            cmd = new SqlCommand("SELECT * FROM Pagos",con);
             List<Pago> _lstPagos = new List<Pago>();
-
+            
             /// Implementar lo necesaario para conexiones SQL
-
+            con.Open();
+            dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+            dt.Load(dr);
 
             foreach (var row in dt.Rows)
             {
-                _lstPagos.Add(row);
+                _lstPagos.Add((Pago)row);
             }
 
             return _lstPagos;

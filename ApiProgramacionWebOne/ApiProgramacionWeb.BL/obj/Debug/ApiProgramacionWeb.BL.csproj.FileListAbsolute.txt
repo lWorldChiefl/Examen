@@ -1,0 +1,12 @@
+C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb.BL\bin\Debug\ApiProgramacionWeb.BL.dll.config
+C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb.BL\bin\Debug\ApiProgramacionWeb.BL.dll
+C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb.BL\bin\Debug\ApiProgramacionWeb.BL.pdb
+C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb.BL\bin\Debug\ApiProgramacionWeb.DAL.dll
+C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb.BL\bin\Debug\EntityFramework.dll
+C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb.BL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb.BL\bin\Debug\ApiProgramacionWeb.DAL.pdb
+C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb.BL\bin\Debug\EntityFramework.xml
+C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb.BL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb.BL\obj\Debug\ApiProgramacionWeb.BL.csprojResolveAssemblyReference.cache
+C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb.BL\obj\Debug\ApiProgramacionWeb.BL.dll
+C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb.BL\obj\Debug\ApiProgramacionWeb.BL.pdb

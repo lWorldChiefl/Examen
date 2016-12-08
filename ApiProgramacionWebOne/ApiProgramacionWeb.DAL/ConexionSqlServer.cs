@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 
 namespace ApiProgramacionWeb.DAL
 {
-    class ConexionSqlServer
+    public static class ConexionSqlServer
     {
         /*
          * Crear un metodo de conexion utilizando el Webconfig y las librerias de ConfigurationManger.
@@ -17,7 +17,7 @@ namespace ApiProgramacionWeb.DAL
          * 
          * */
 
-        static string ConexionSql()
+        public static string ConexionSql()
         {
             var cadenaString = ConfigurationManager.ConnectionStrings["TiendaEntities"].ConnectionString;
             return cadenaString;

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TiendaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Clientes">
+    <Key>
+      <PropertyRef Name="ClienteId" />
+    </Key>
+    <Property Name="ClienteId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="80" />
+    <Property Name="Edad" Type="int" />
+    <Property Name="EdoClienteId" Type="int" />
+  </EntityType>
+  <EntityType Name="EstadosClientes">
+    <Key>
+      <PropertyRef Name="EdoClienteId" />
+    </Key>
+    <Property Name="EdoClienteId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Estado" Type="varchar" MaxLength="80" />
+  </EntityType>
+  <EntityType Name="Pagos">
+    <Key>
+      <PropertyRef Name="PagoId" />
+    </Key>
+    <Property Name="PagoId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClienteId" Type="int" />
+    <Property Name="FechaPago" Type="date" />
+    <Property Name="Total" Type="int" />
+    <Property Name="TipoPago" Type="varchar" MaxLength="80" />
+    <Property Name="IVA" Type="int" />
+  </EntityType>
+  <Association Name="FK__Clientes__EdoCli__1273C1CD">
+    <End Role="EstadosClientes" Type="Self.EstadosClientes" Multiplicity="0..1" />
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadosClientes">
+        <PropertyRef Name="EdoClienteId" />
+      </Principal>
+      <Dependent Role="Clientes">
+        <PropertyRef Name="EdoClienteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Pagos__IVA__15502E78">
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />
+    <End Role="Pagos" Type="Self.Pagos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clientes">
+        <PropertyRef Name="ClienteId" />
+      </Principal>
+      <Dependent Role="Pagos">
+        <PropertyRef Name="ClienteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TiendaModelStoreContainer">
+    <EntitySet Name="Clientes" EntityType="Self.Clientes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EstadosClientes" EntityType="Self.EstadosClientes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pagos" EntityType="Self.Pagos" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Clientes__EdoCli__1273C1CD" Association="Self.FK__Clientes__EdoCli__1273C1CD">
+      <End Role="EstadosClientes" EntitySet="EstadosClientes" />
+      <End Role="Clientes" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Pagos__IVA__15502E78" Association="Self.FK__Pagos__IVA__15502E78">
+      <End Role="Clientes" EntitySet="Clientes" />
+      <End Role="Pagos" EntitySet="Pagos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
