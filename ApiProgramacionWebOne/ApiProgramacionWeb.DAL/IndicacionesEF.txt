@@ -1,0 +1,7 @@
+﻿1. En la Base de Datos Crear 3 tablas -NO ES NECESARIO QUE SEA RELACIONADA LA BD
+	- Clientes → { ClientId, Nombre, Edad, EdoClienteId, }
+	- EstadosClientes →  { EdoClienteId, Estado }
+	- Pagos → { PagoId, ClientId, FechaPago, Total, TipoPago, IVA}
+2. Crear la Conexion a la Base de Datos con Entity Framework
+3. Agregar las Tablas al Modelo
+4. El model de conexio debera ser en la Capa DAL
