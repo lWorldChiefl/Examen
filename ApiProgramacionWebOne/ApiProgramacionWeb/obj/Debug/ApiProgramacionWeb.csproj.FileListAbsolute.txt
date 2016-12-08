@@ -1,4 +1,3 @@
-C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb\bin\EntityFramework.dll
 C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb\bin\ApplicationInsights.config
 C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb\bin\roslyn\csc.exe
 C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -29,6 +28,7 @@ C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb\bi
 C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb\bin\System.Net.Http.Formatting.dll
 C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb\bin\System.Web.Http.dll
 C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb\bin\System.Web.Http.WebHost.dll
+C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb\bin\EntityFramework.dll
 C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb\bin\ApiProgramacionWeb.BL.pdb
 C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb\bin\ApiProgramacionWeb.DAL.pdb
 C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb\bin\Microsoft.AI.DependencyCollector.xml
@@ -45,3 +45,5 @@ C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb\bi
 C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb\obj\Debug\ApiProgramacionWeb.csprojResolveAssemblyReference.cache
 C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb\obj\Debug\ApiProgramacionWeb.dll
 C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb\obj\Debug\ApiProgramacionWeb.pdb
+C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb\bin\EntityFramework.SqlServer.dll
+C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb\bin\EntityFramework.SqlServer.xml

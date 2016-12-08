@@ -11,10 +11,11 @@ namespace ApiProgramacionWeb.DAL
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
     
     public partial class Cliente
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Cliente()
         {
             this.Pagos = new HashSet<Pago>();
@@ -24,9 +25,7 @@ namespace ApiProgramacionWeb.DAL
         public string Nombre { get; set; }
         public Nullable<int> Edad { get; set; }
         public Nullable<int> EdoClienteId { get; set; }
-    
-        public virtual EstadosCliente EstadosCliente { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Pago> Pagos { get; set; }
+        public EstadosCliente EstadosCliente { get; set; }
+        public ICollection<Pago> Pagos { get; set; }
     }
 }

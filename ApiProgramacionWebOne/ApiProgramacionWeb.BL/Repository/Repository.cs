@@ -20,9 +20,9 @@ namespace ApiProgramacionWeb.BL.Repository
     {
         protected readonly TiendaEntities Context;
 
-        public Repository(TiendaEntities context)
+        public Repository()
         {
-            Context = context;
+            Context = new TiendaEntities();
         }
 
         public TEntity GetByIDRepository(int id)
@@ -43,21 +43,25 @@ namespace ApiProgramacionWeb.BL.Repository
         public void AddRepository(TEntity entity)
         {
             Context.Set<TEntity>().Add(entity);
+            Context.SaveChanges();
         }
 
         public void Remove(TEntity entity)
         {
             Context.Set<TEntity>().Remove(entity);
+            Context.SaveChanges();
         }
 
         public void RemoveRange(IEnumerable<TEntity> entities)
         {
            Context.Set<TEntity>().RemoveRange(entities);
+           Context.SaveChanges();
         }
 
         public void Updaterepository(TEntity TEntity)
         {
             Context.Entry(TEntity).State = EntityState.Modified;
+            Context.SaveChanges();
         }
 
         public bool TryGetId(int Id, out string comment)

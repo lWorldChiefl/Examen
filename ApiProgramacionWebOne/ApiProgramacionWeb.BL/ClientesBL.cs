@@ -10,27 +10,34 @@ using System.Threading.Tasks;
 using ApiProgramacionWeb;
 using ApiProgramacionWeb.DAL;
 using ApiProgramacionWeb.BL.Repository;
+using System.Data.Entity;
 
 namespace ApiProgramacionWeb.BL
 {
     public class ClientesBL : Repository<Cliente>
     {
-        public ClientesBL(TiendaEntities context)
-            : base(context)
+
+        public IEnumerable<Cliente> Get()
         {
-        }
-   
-        public bool GetCliente()
-        {
-            GetListRepository();
-            return true;
+            return Context.Set<Cliente>().ToList();
         }
 
-        public bool PostCliente(Cliente _cliente)
+        public void Post(Cliente entity)
         {
-            // Utilizar el repository para guardar el cliente.
-            AddRepository(_cliente);
-            return true;
+            Context.Set<Cliente>().Add(entity);
         }
+
+        public void Update(Cliente TEntity)
+        {
+            Context.Entry(TEntity).State = EntityState.Modified;
+            Context.SaveChanges();
+        }
+
+        public void Delete(Cliente entity)
+        {
+            Context.Set<Cliente>().Remove(entity);
+            Context.SaveChanges();
+        }
+
     }
 }

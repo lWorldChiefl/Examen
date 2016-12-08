@@ -13,7 +13,7 @@ namespace ApiProgramacionWeb.Controllers
     {
         private bool ok = false;
         TiendaEntities db = new TiendaEntities();
-        ClientesBL _clientesBL = null;
+        ClientesBL _clientesBL = new ClientesBL();
         
         /*
          * ENTITY FRAMEWORK
@@ -31,11 +31,12 @@ namespace ApiProgramacionWeb.Controllers
          * 
          * */
 
+        [HttpGet]
         public IHttpActionResult Get()
         {
             try
             {
-                var List = _clientesBL.GetCliente();
+                var List = _clientesBL.Get();
                 return Ok(List);
             }
             catch (Exception)
@@ -44,10 +45,54 @@ namespace ApiProgramacionWeb.Controllers
             }           
         }
 
+        [HttpGet]
+        public IHttpActionResult Get()
+        {
+            try
+            {
+                var List = _clientesBL.Get();
+                return Ok(List);
+            }
+            catch (Exception)
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpPost]
         public IHttpActionResult Post(Cliente _cliente)
         {
             try
             {
+                _clientesBL.Post(_cliente);
+                return Ok();
+            }
+            catch (Exception)
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpDelete]
+        public IHttpActionResult Delete(Cliente _cliente)
+        {
+            try
+            {
+                _clientesBL.Delete(_cliente);
+                return Ok();
+            }
+            catch (Exception)
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpPut]
+        public IHttpActionResult Update(Cliente _cliente)
+        {
+            try
+            {
+                _clientesBL.Update(_cliente);
                 return Ok();
             }
             catch (Exception)
