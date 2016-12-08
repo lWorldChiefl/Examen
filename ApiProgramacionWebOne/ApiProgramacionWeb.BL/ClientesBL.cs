@@ -13,12 +13,18 @@ using ApiProgramacionWeb.BL.Repository;
 
 namespace ApiProgramacionWeb.BL
 {
-    class ClientesBL : Repository<Cliente>
+    public class ClientesBL : Repository<Cliente>
     {
         public ClientesBL(TiendaEntities context)
             : base(context)
         {
-        }        
+        }
+   
+        public bool GetCliente()
+        {
+            GetListRepository();
+            return true;
+        }
 
         public bool PostCliente(Cliente _cliente)
         {

@@ -4,13 +4,17 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using ApiProgramacionWeb.BL;
+using ApiProgramacionWeb.DAL;
 
 namespace ApiProgramacionWeb.Controllers
 {
     public class ClientesController : ApiController
     {
         private bool ok = false;
-
+        TiendaEntities db = new TiendaEntities();
+        ClientesBL _clientesBL = null;
+        
         /*
          * ENTITY FRAMEWORK
          * 
@@ -31,7 +35,7 @@ namespace ApiProgramacionWeb.Controllers
         {
             try
             {
-                var List = _clientesBL.GetListaClientes();
+                var List = _clientesBL.GetCliente();
                 return Ok(List);
             }
             catch (Exception)

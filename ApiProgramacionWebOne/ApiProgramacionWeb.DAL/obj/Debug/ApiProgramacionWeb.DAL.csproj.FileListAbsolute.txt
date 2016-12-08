@@ -1,5 +1,4 @@
 C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb.DAL\bin\Debug\ApiProgramacionWeb.DAL.dll
 C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb.DAL\bin\Debug\ApiProgramacionWeb.DAL.pdb
-C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb.DAL\obj\Debug\ApiProgramacionWeb.DAL.csprojResolveAssemblyReference.cache
 C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb.DAL\obj\Debug\ApiProgramacionWeb.DAL.dll
 C:\Users\Sky\Documents\GitHub\Examen\ApiProgramacionWebOne\ApiProgramacionWeb.DAL\obj\Debug\ApiProgramacionWeb.DAL.pdb

@@ -11,7 +11,7 @@ using System.Data.Common;
 
 namespace ApiProgramacionWeb.BL
 {
-    class PagosBL
+    public class PagosBL
     {
         /*
          * 
