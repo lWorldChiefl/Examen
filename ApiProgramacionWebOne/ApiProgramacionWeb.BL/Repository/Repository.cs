@@ -52,7 +52,7 @@ namespace ApiProgramacionWeb.BL.Repository
 
         public void RemoveRange(IEnumerable<TEntity> entities)
         {
-           // Context.Set<TEntity>().RemoveRange(entities);
+           Context.Set<TEntity>().RemoveRange(entities);
         }
 
         public void Updaterepository(TEntity TEntity)

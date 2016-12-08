@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Data.Sql;
 using System.Data;
+using System.Data.SqlClient;
+using ApiProgramacionWeb.DAL;
+using System.Data.Common;
 
 namespace ApiProgramacionWeb.BL
 {
@@ -23,19 +26,18 @@ namespace ApiProgramacionWeb.BL
         private DataTable dt = null;
         private SqlCommand cmd = null;
 
-        public List<Pagos> GetListaDePagos()
+        public List<Pago> GetListaDePagos()
         {
             dt = new DataTable();
-            cmd = SqlCommand();
-            List<Pagos> _lstPagos = new List<Pagos>();
+            cmd = new SqlCommand();
+            List<Pago> _lstPagos = new List<Pago>();
 
             /// Implementar lo necesaario para conexiones SQL
 
-            foreach (row r in dt.Rows)
+
+            foreach (var row in dt.Rows)
             {
-
-
-                _lstPagos.Add(???);
+                _lstPagos.Add(row);
             }
 
             return _lstPagos;

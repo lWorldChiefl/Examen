@@ -9,6 +9,7 @@
 
 namespace ApiProgramacionWeb.BL
 {
+    using ApiProgramacionWeb.DAL;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;

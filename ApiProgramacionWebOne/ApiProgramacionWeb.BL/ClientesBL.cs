@@ -9,12 +9,14 @@ using System.Text;
 using System.Threading.Tasks;
 using ApiProgramacionWeb;
 using ApiProgramacionWeb.DAL;
+using ApiProgramacionWeb.BL.Repository;
 
 namespace ApiProgramacionWeb.BL
 {
     class ClientesBL : Repository<Cliente>
     {
-        public ClientesBL(wcfDataBaseEntities context) : base(context)
+        public ClientesBL(TiendaEntities context)
+            : base(context)
         {
         }        
 
